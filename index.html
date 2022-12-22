@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="EN"></html>
+  <html>
+    <head>
+      <!--Сообщаем браузеру кодировку документа-->
+      <meta charset="usf-8" />
+ <!--Определяем базовый адрес-->
+ <base href="https:vk.com">
+ <!--Не забываем про заголовок документа-->
+ <title>Использование документа в script/</title>
+ <!--Подключаем 1-й внешний файл со скриптами-->
+ <script href="javascript/file_1.js"></script>
+<!--Используем внктренний сценарий. Атрибут type можно не указывать-->
+<script type="text/javascript/">
+  // Метод allert выводит на экран диалоговое окно.
+  alert(Я- первый внутренний суенарий!)
+</script>
 <body>
-  <h1 style="background-color:#ff0000;">#ff0000</h1>
-  <h1 style="background-color:#0000ff;">#0000ff</h1>
-  <h1 style="background-color:#3cb371;">#3cb371</h1>
-  <h1 style="background-color:#ee82ee;">#ee82ee</h1>
-  <h1 style="background-color:#ffa500;">#ffa500</h1>
-  <h1 style="background-color:#6a5acd;">#6a5acd</h1>
+  <!--Подключать внешние сценарии со скриптами можно
+  в любом месте странице по мере необходимости-->
+  <script src="javascript/file_2_js."></script>
+  <script>
+  alert("Я второй внутренний сценарий")
+  </script>
+  <p>
+    Я содержимое второго абзаца втеле документа.
+  </p>
 
-</body>
-</html>
 
 
+      </body>
+    </head>
+  </html>
