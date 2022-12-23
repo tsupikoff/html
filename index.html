@@ -5,16 +5,26 @@
       <meta charset="utf-8" />
     </head>
     <body>
-      <img src="images/workplace.jpg" alt="workplace" usemap="#workmap">
-      <map name="workmap" >
-        <area shape="circle" coords="339,300,50" alt="cup of coffee" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5">
-        <area shape="rect" coords="32,44,270,350" alt="computer" href="https://www.citilink.ru/catalog/kompyutery/">
-      </map>
-     
-      <p>
-        Кликните по нужной фигуре чтобы перейти<br>
-        на страницу ее описания
-      </p>
-    </a> 
+      <!--Не виден на странице и не проигрывается-->
+  <p>
+    <audio src="ad.mp3"></audio>
+    Первая запись не видна и не проигрывается.
+  </p>
+  <!--Контрольная панель присутствует, воспроизведет только звук-->
+  <p>
+    <audio src="karl.mp4" controls autoplay ></audio>
+    Вторая запись сразу же будет проигрываться после загрузки<br>
+    присутствует атрибут autoplay. При этом так как мы используем<br>
+    так как мы используем элемент аудио то проиграется только дорожка <br>
+    в вмдео файле<br>
+  </p>
+  <!--Воспроизведет звук второго source-->
+  <p>
+    <audio controls loop>
+      <source src="post.mp4">
+      <source src="karl.mp4">
+    </audio>
+  </p>
+
   </html>
 </body>
