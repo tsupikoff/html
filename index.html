@@ -6,12 +6,24 @@
       <title>Видеозапись done</title>
     </head>
     <body>
-   <!--Код фрейма берем на youtub-->
-   <iframe  src="https://www.youtube.com/embed/FGGH5vKJxeg" title="катя рассказывает" frameborder="no"width="560" height="315" title="Видео с Ютуба"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-    gyroscope; picture-in-picture" allowfullscreen>
-    Ваш браузер не поддерживает встроенные фреймы.<br>
-   </iframe>
+  <!--Создаем простейшую форму для отправки данных-->
+
+  <form action="php/registration.php" method="get" name="reg_form">
+<!--Связываем текст имя с элементом input-->
+
+<label for="first_name">Имя</label>
+<!--Создаем поле для ввода имени-->
+
+<input type="text" id="first_name" name="first_name"><br><br>
+<!--Создаем поля для ввода фамилии-->
+
+<label>Фамилия:<input type="text" name="last_name"></label>
+<br><br>
+<!--Создаем кнопку для отправки данных на сервер-->
+
+<input type="submit" value="Отправить" disabled>
+
+  </form>
 
    
  
