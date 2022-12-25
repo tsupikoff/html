@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <!--Прмвыкаем задавать служебные элементы-->
-  <meta charset="utf-8" />
-  <title>Видеозапись done</title>
-</head>
+  <meta charset="utf-8">
+  <title>Формы</title>
+  <body>
+    <form action="php/registration.php" method="post" name="reg_form">
+<!-- Создаем поле для ввода имени -->
+<label>Имя:<input type="text" name="first_name"></label><br><br>
 
-<body>
-  <!--Создаем простейшую форму для отправки данных-->
+<!-- Все элементы одной группы радиокнопок должны иметь одно имя -->
+Возраст: <label>20-30<input type="radio" name="age" value="2030">&nbsp;</label>
+<label>31-40<input type="radio" name="age" value="3140">&nbsp;</label>
+<label>41-50<input type="radio" name="age" value="4150"></label><br><br>
 
-  <form action="php/registration.php" method="get" name="reg_form">
-    <!--Связываем текст имя с элементом input-->
-    <!--  ПОПРАВИЛ ПАРУ МОМЕНТОВ И ОПЕЧАТОК -->
-    <label form="first_name">Имя &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" id="first_name"
-        name="first_name"></label>
-    <!--Создаем поле для ввода имени-->
+<!-- Выбираем виды которыми владеем -->
+Виды единоборств: <label>бокс<input type="checkbox" name="box" value="box">&nbsp</label>
+<label>Карате:<input type="checkbox" name="karate" value="karate">&nbsp</label>
+<label>Дзюдо:<input type="checkbox" name="judo" value="judo"></label><br><br>
+<!--Поле для загрузки файда(фото)  -->
+<label>Загрузить фото:<input type="file" name="foto"></label><br><br>
+<!-- Поле ввода пароля -->
+<label>Ввидите пароль:<input type="password" name="passw"></label><br><br>
+<!-- Создаем кнопки сброса и отправки на сервер -->
+<input type="reset" value="Сброс">&nbsp; &nbsp;
+<input type="submit" value="Отправить" disabled>
 
-    <br><br>
-    <!--Создаем поля для ввода фамилии-->
+    </form>
 
-    <label>Фамилия:<input type="text" name="last_name"></label>
-    <br><br>
-    <!--Создаем кнопку для отправки данных на сервер-->
-
-    <input type="submit" value="Отправить" disabled>
-
-  </form>
-
-
-
-
-</html>
+ 
+ 
+  
 </body>
+</html>
