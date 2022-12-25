@@ -5,43 +5,17 @@
   <title>Формы</title>
   <body>
     <form action="php/registration.php" method="post" name="reg_form">
-<label>Имя:<input type="text" name="first_name"
-  minlength="2" maxlength="20" autofocus></label><br><br>
-
-  
-
-  <label>Фамилия:<input type="text" name="last_name"
-  minlength="2" maxlength="20"></label><br><br>
-  <!-- Все элементы одной группы радиокнопок должны иметь одно имя -->
-Возраст:<label>20-30<input type="radio" name="age" value="2030">&nbsp;</label>
-<label>31-41<input type="radio" name="age" value="3141">&nbsp;</label>
-<label>41-50<input type="radio" name="age" value="4150"></label><br><br>
-
-<!-- Выбираем виды которыми владеем -->
-Виды единоборств:<label>Бокс:<input type="checkbox" name="box" value="box">&nbsp;</label>
-<label>Катаре:<input type="checkbox" name="karate" value="karate">&nbsp;</label>
-<label>Дзюдо:<input type="checkbox" name="judo" value="judo" checked></label><br><br>
-<!-- Поле для загрузки нескольких файлов сразу(фото) -->
-<label>Фото<input type="file" name="foto" multiple></label><br><br>
-<!-- Обязательное поле ввода логина -->
-<label>Ввидите логин:<input type="text" name="login" required></label><br><br>
-<!-- Обязательное поле ввода пароля -->
-<label>Ввидите пароль:<input type="password" name="passw"
-minlength="7" maxlength="15" required></label><br><br>
-<!-- Создаем кнопки сброса и отправки на сервер -->
-<input type="reset" value="Сброс">&nbsp;&nbsp;
-<input type="supmit" value="Отправить" disabled>
+      <!-- Связываем текст с текстовым полем -->
+      <label for="comment">Оставить комментарий</label><br><br>
+      <!-- Ширина 50 символов высота 10 строк -->
+      <!-- Разрыв строк будут переданы на сервер -->
+      <textarea id="comment" cols="50" rows="10" wrap="hard">
+        Этот текс будет предварительно отображен браузером вполе<br>
+        вместе с <em>тегами</em> Напоминает перформатированный текст
+      </textarea><br><br>
+      <input type="submit" value="Отправить" disabled>
 
     </form>
-
-
-
-
-
-
-
-
-    
 
 
     
