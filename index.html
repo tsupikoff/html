@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Формы</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>кнопка button</title>
+  </head>
   <body>
-    <form action="php/registration.php" method="post" name="reg_form">
+    <form action="php/registration.php" method="post" name="php_reg">
       <!-- Связываем текст с текстовым полем -->
-      <label for="comment">Оставить комментарий</label><br><br>
-      <!-- Ширина 50 символов высота 10 строк -->
-      <!-- Разрыв строк будут переданы на сервер -->
-      <textarea id="comment" cols="50" rows="10" wrap="hard">
-        Этот текс будет предварительно отображен браузером вполе<br>
-        вместе с <em>тегами</em> Напоминает перформатированный текст
-      </textarea><br><br>
-      <input type="submit" value="Отправить" disabled>
+      <label for="comment">Оставить сообщение:</label><br /><br />
 
+      <textarea id="comment" cols="40" rows="10" wrap="hard">
+Запрещается употреблять нецензурные выражения.
+    </textarea
+      ><br /><br />
+      <!-- Создаем кнопку отправки на сервер -->
+      <button type="submit" name="submit_button" disabled>
+        Отправить на форум
+      </button>
     </form>
-
-
-    
-
- 
- 
-  
-</body>
+  </body>
 </html>
