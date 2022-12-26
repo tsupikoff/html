@@ -5,18 +5,32 @@
     <title>кнопка button</title>
   </head>
   <body>
-    <form action="php/registration.php" method="post" name="php_reg">
-      <!-- Связываем текст с текстовым полем -->
-      <label for="comment">Оставить сообщение:</label><br /><br />
+<form action="php/registration.php" name="reg_form" method="post">
 
-      <textarea id="comment" cols="40" rows="10" wrap="hard">
-Запрещается употреблять нецензурные выражения.
-    </textarea
-      ><br /><br />
-      <!-- Создаем кнопку отправки на сервер -->
-      <button type="submit" name="submit_button" disabled>
-        Отправить на форум
-      </button>
-    </form>
+  Укажите спортивный разряд:&nbsp;
+  <!-- Создаем раскрывающийся список -->
+  <select name="category">
+    <option value="0">Отсутствует</option>
+    <option value="3" label="3-й">3-й взрослый </option>
+    <option value="2" label="2-й">2-й взрослый</option>
+    <option value="1" label="1-й">1-й взрослый</option>
+    <option value="kms">KMS</option>
+    <option value="ms">MS</option>
+    <option value="msmk">MSMK</option>
+  </select><br><br>
+
+  Выбирите виды спорта:<br><br>
+  <!-- Изначально будет видно три пункта, но выбирать можно -->
+  <!-- Сразу несколько пунктов при нажатой cntr -->
+  <select name="sport" size="3" multiple>
+    <option value="0" selected>box</option>
+    <option value="1">Вольная борьба</option>
+    <option value="2">Дзюдо</option>
+    <option value="3">Карате</option>
+    <option value="4">Тхэквондо</option>
+  </select><br><br>
+  <button type="submit" name="s_b" disabled>Отправить</button>
+
+</form>
   </body>
 </html>
