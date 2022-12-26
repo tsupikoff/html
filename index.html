@@ -5,25 +5,22 @@
     <title>кнопка button</title>
   </head>
   <body>
-<form action="php.registration.php" name="reg_form" method="post">
+    <form action="php/registration.php" method="post" name="reg_form">
+      <label
+        >Вид единоборства:&nbsp;
+        <!-- Связывамем данное поле с элементом detalist -->
+        <!-- При помощи атрибута list -->
+        <input type="text" name="box" list="sport" />
+      </label>
+      <!-- Обязательно задаем атрибут id -->
+      <datalist id="sport">
+        <option value="box">
+        <option value="karate">
+        <option value="judo">
+      </datalist><br><br>
 
-  Укажите любимые фрукты и овощи:&nbsp;
-  <select name="fruits_vegetables" multiple size="3">
-<optgroup label="Фрукты">
-  <option value="apple">Яблоки</option>
-  <option value="pear">Груши</option>
-  <option value="orange">Апельсины</option>
-</optgroup>
-<optgroup label="Овощи">
-  <option value="carrot">Морковь</option>
-  <option value="beet">Свекла</option>
-  <option value="potato">Картофель</option>
-</optgroup>
-
-
-  </select><br><br>
-  <button type="submit" name="s_b" disabled>Отправить</button>
-
-</form>
+      
+      <input type="submit" value="Отправить" disabled />
+    </form>
   </body>
 </html>
