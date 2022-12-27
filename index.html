@@ -5,50 +5,19 @@
     <title>кнопка button</title>
   </head>
   <body>
-    <h2>Абзац, заголовки и преформатированный текст в HTML</h2>
-
-    <h3>Абзац и формирующий его тег &lt;p&gt;</h3>
-
-    Для разбиения текста на абзацы в<span style="color: green"> HTML</span>
-    используется элемент<strong> <span style="color: green"> «Абзац», </span></strong><br />
-    который формируется парным тегом
- <strong>   <span style="color: green"> &lt;p&gt;</span></strong> (от<span style="color: orange">
-      англ.</span
-    >
-    <span style="color: blue"> paragraph</span> &ndash; <em> абзац</em>). И<br />
-    хотя в некоторых случаях спецификация допускает отсутствие
-    <br />закрывающего тега, мы будем применять его всегда, явно формируя<br />
-    элемент <span style="color: green">«Абзац».</span> Добавим, что абзац
-    относится к блочным элементам,<br />
-    поэтому по умолчанию начинается с новой строки и отделяется от<br />
-    остального содержимого вертикальными отступами.<br />
-
-  <h3>  Создание заголовков. Теги &lt;h1&gt;-&lt;h6&gt;</h3>
- 
-     <p class="left."> Если возникает необходимость как-то назвать часть текста (например,<br> параграф 
-      или раздел) и выделить его относительную важность, можно<br> воспользоваться 
-      одним из шести заголовков разного уровня, которые<br> формируются парными тегами 
-      от<strong> <span style="color: green;"> &lt;h1&gt; до &lt;h6&gt;</span></strong> (от <span style="color: orange;">англ.</span>
-   <em>  <span style="color: blue;">heading&ndash;<br></em></span> <em>заголовок</em>) и также относятся к 
-      блочным элементам. Заголовок первого<br> уровня отображается самым крупным шрифтом 
-      жирного начертания,<br> остальные  поменьше, по мере убывания своей важности.<br>
-     </p>
-
-    <h3> Преформатированный текст. Тег &lt;pre&gt;</h3>
- 
-   <p class="_"> А что если нам нужно вывести исходный текст на экран без<br> форматирования? Такая 
-      ситуация случается, например, когда нужно<br> сохранить подряд идущие пробелы и 
-      переносы строк или просто<br> сохранить исходное форматирование при отображении тех 
-      же примеров<br> кода. В таких случаях можно применить элемент <br>
-    <strong><span style="color: green;">  «преформатированный текст»,</span> </strong>который формируется парным тегом<br><strong> <span style="color: green;">
-       &lt;pre&gt;</strong></span> 
-      (от<span style="color: orange;"> англ.</span><em><span style="color: blue;"> preformatted text</span></em>;" &ndash;
-      <em> предварительно форматированный<br> текст</em>). 
-      Браузеры отображают его как блочный элемент.<br>
-      
-      </p>
+<form action="php/registration.php" method="post" name="reg_form">
 
 
+  <fieldset>
+<!-- Создаем заголовок группы -->
+<legend>Ваш любимый напиток</legend>
+<!-- Элементы группы -->
+<label> <input type="radio" name="drink" value="coffee" checked>Кофе</label><br>
+<label> <input type="radio" name="drink" value="green_tea">Зеленый чай</label><br>
+<label> <input type="radio" name="drink" value="black_tea">Черный чай</label><br>
+  </fieldset><br><br>
+  <button type="submit" disabled>Отправить</button>
+</form>
 
 
 
