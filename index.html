@@ -6,29 +6,32 @@
     <title>Это элемент title а не атрибут</title>
   </head>
   <body>
-    <style>
-      /* Внутренняя таблица стилей */
+   <table border="1">
+    <caption>Деление на секции с выделением разным фоном</caption>
+    <thead style="background-color: yellow;">
+    <tr>
+<th>Я первая заглавная ячейка</th>
+<th>Я вторая заглавная ячейка</th>
+    </tr>
+    </thead>
+    <tbody style="background-color: green;">
+    <tr>
+      <td>Я первая ячейка в первой сторке тела</td>
+      <td>Я вторая ячейка в первой строке тела</td>
+    </tr>
+    <tr>
+<td>Я первая ячейка во второй строке тела</td>
+<td>Я вторая ячейка во второй строке тела</td>
+    </tr>
+    </tbody>
+    <tfoot style="background-color: grey;">
+    <tr>
+<td>Итог:</td>
+<td>Использованно три фона</td>
+    </tr>
+    </tfoot>
 
-      dt {
-        padding: 0.1em;
-        margin-left: 1em;
-        color: green;
-      }
 
-      dd {
-        padding: 0.1em;
-        margin-left: 1em;
-        margin-bottom: 0.5em;
-        
-      }
-    </style>
-    <dl>
-      <dt>&#x263C;Солнечно</dt>
-      <dd>Кругом тепло и солнечно, тучки почти отсутствуют.</dd>
-      <dt>&#x2601;Облачно</dt>
-      <dd>Небо покрыто тучками, солнышко почти не видно.</dd>
-      <dt>&#x2602;Дождь</dt>
-      <dd>Серые тучи покрывают все небо и обильно поливают нас жождем.</dd>
-    </dl>
+   </table>
   </body>
 </html>
