@@ -6,32 +6,26 @@
     <title>Это элемент title а не атрибут</title>
   </head>
   <body>
-   <table border="1">
-    <caption>Деление на секции с выделением разным фоном</caption>
-    <thead style="background-color: yellow;">
-    <tr>
-<th>Я первая заглавная ячейка</th>
-<th>Я вторая заглавная ячейка</th>
-    </tr>
-    </thead>
-    <tbody style="background-color: green;">
-    <tr>
-      <td>Я первая ячейка в первой сторке тела</td>
-      <td>Я вторая ячейка в первой строке тела</td>
-    </tr>
-    <tr>
-<td>Я первая ячейка во второй строке тела</td>
-<td>Я вторая ячейка во второй строке тела</td>
-    </tr>
-    </tbody>
-    <tfoot style="background-color: grey;">
-    <tr>
-<td>Итог:</td>
-<td>Использованно три фона</td>
-    </tr>
-    </tfoot>
+<table border="1">
+<caption>Таблица с 8 колонками</caption>
+<!-- Установим желтый фон первых двух колонок -->
+<col style="background-color: yellow;" span="2">
+<!-- Фон третьей колонки сделаем красным -->
+<col style="background-color:red ;">
+<!-- Три колонки пропустим -->
+<col span="3">
+<!-- Фон седьмой колонки сделаем серыым -->
+<col style="background-color: gray;">
+<tr>
 
+  <td>1.1</td> <td>1.2</td> <td>1.3</td> <td>1.4</td> 
+  <td>1.5</td> <td>1.6</td> <td>1.7</td> <td>1.8</td> 
+</tr>
+<tr>
+  <td>2.1</td> <td>2.2</td> <td>2.3</td> <td>2.4</td> 
+      <td>2.5</td> <td>2.6</td> <td>2.7</td> <td>2.8</td>
+</tr>
+</table>
 
-   </table>
   </body>
 </html>
