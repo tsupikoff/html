@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!-- Установим стиль всех абзацев (для всех устройств) -->
+  <style type="text/css">
+    p {
+      background-color: yellow;
+      color: blue;
+    }
+  </style>
+
+  <!-- Установим стиль всех абзацев при распечатке документа -->
+  <style type="text/css" media="print">
+    p {
+      background-color: black;
+      color: blue;
+    }
+  </style>
 <body>
-  <table border="1">
- <caption>Таблица с 8 колонками</caption>
- <!-- Первой колонке установим синий фон -->
+<p>
 
-<col style="color: blue;">
-<!-- Зададим колонкам ширину в 60 пикселей -->
-<colgroup style="width: 60px;">
-<col style="background-color: yellow;">
-<col>
-<col style="background-color: red;">
+  Если меня захотят распечатать, то будет применен <br>
+  синий фон и черный цвет шрифта. А так я отображаюсь <br>
+  на желтом фоне синими буквами.
+</p>
 
-</colgroup>
-<!-- А этим в 100 -->
-<colgroup style="width: 100px;">
-<col>
-<col style="background-color: blue;" title="пидор">
-</colgroup>
 
-<tr>
-  <td>1.1</td> <td>1.2</td> <td>1.3</td> <td>1.4</td> 
-  <td>1.5</td> <td>1.6</td> <td>1.7</td> <td>1.8</td> 
-</tr>
- 
-<tr>
-  <td>2.1</td> <td>2.2</td> <td>2.3</td> <td>2.4</td> 
-  <td>2.5</td> <td>2.6</td> <td>2.7</td> <td>2.8</td>
-</tr>
 
-  </table>
+
+
 </body>
+
+
+
+
+
+
+
+</head>
+
 </html>
