@@ -6,34 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-
-  <!-- Установим стиль всех абзацев (для всех устройств) -->
-  <style type="text/css">
-    p {
-      background-color: yellow;
-      color: blue;
-    }
-  </style>
-
-  <!-- Установим стиль всех абзацев при распечатке документа -->
-  <style type="text/css" media="print">
-    p {
-      background-color: black;
-      color: blue;
-    }
-  </style>
 <body>
 <p>
-
-  Если меня захотят распечатать, то будет применен <br>
-  синий фон и черный цвет шрифта. А так я отображаюсь <br>
-  на желтом фоне синими буквами.
+  <audio src="INSTASAMKA - ХЛОПАЙ.mp3"controls></audio><br>
+  Первая запись не видна так как отсутствует<br>
+  атрибут controls autoplay<br>
 </p>
+<!-- Кнтрольная панель присутствует, воспроизвет только звук -->
+<p>
+<audio src="post.mp4" controls ></audio><br>
+  Вторая запись сразу будет проигрываться после загрузки<br>
+  так как присутствует атрибут autoplay<br>
+  при этом проигрывается только звук так как используем тег<br>
+  audio.<br>
+</p>
+<!-- Воспроизведет звук второго source -->
+<p>
+<audio controls >
+<source src="karl.mp4">
+<source src="post.mp4">
 
+</audio><br>
+Третья запись имеет контрольную панель но сразу проигрываться не будет<br>
+зато после запуска она будет проигрываться по кругу.<br><br>
 
+<video src="post.mp4" controls>
 
+</video>
 
-
+</p> 
 </body>
 
 
