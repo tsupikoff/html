@@ -5,30 +5,35 @@
     <title>Document</title>
   </head>
 <body>
-<form action="php/regostration/php" method="post" name="reg_form">
+<form action="php/regostration.php" method="post" name="reg_form">
 
-<!-- Создаем поле для ввода имени -->
-<label>Имя:<input type="text" name="first_name"> </label><br><br>
+<label> Имя: <input type="text" name="first_name" minlength="2" maxlength="20" autofocus ></label><br><br>
 
 
-<!-- Все элементы одной группы радиокнопок должны иметь одинаковое имя -->
-Возраст:<label> 20:30 <input type="radio"  name="age" value="2030"></label>
-<label>31:40 <input type="radio"  name="age" value="3140">  </label>
-<label>41:50 <input type="radio"  name="age" value="4150">  </label><br><br>  
+<label>Фамилия: <input type="text" name="last_name" minlength="3" maxlength="30"> </label><br><br>
 
+<!-- Все элементы радио группы должны иметь одно имя -->
+Возраст:<label>20:30 <input type="radio" name="age" value="2030"> </label>
+<label>31:40<input type="radio" name="age" value="3140"> </label>
+<label>41:50 <input type="radio" name="age" value="4150"> </label><br><br>
 
 <!-- Выбираем виды которыми владеем -->
-Виды единоборства:<label>бокс: <input type="checkbox" name="box" value="box">   </label>
-<label>карате:<input type="checkbox" name="karate" value="karate">   </label>
-<label>дзюдо: <input type="checkbox" name="judo" value="judo">   </label><br><br>
+Виды единоборств:<label>бокс:<input type="checkbox" name="box" value="box"> </label>
+<label>карате:<input type="checkbox" name="karate" value="karate"> </label>
+<label>дзюдо:<input type="checkbox" name="judo" value="judo" checked:> </label><br><br>
 
-<!-- Поле для загрузки файла(фото) -->
-<label>Загрузить фото <input type="file" name="foto"> </label><br><br>  
-<!-- Поле ввода пороля -->
-<label>Ввидите пароль: <input type="password" name="passw"> </label><br><br>
-<!-- Создаем кнопи сброса и отправки данных на сервер -->
-<input type="reset" value="Сброс">
-<input type="submit" value="Отправить" disabled>
+<!-- Поле для загрузки нескольких файлов сразу( ФОТО) -->
+
+<label>Загрузить фото: <input type="file" name="foto" multiple> </label><br><br>
+
+<label>Поле для ввода логина: <input type="text" name="login" required> </label><br><br>
+
+<label>Поле для ввода пароля: <input type="password" name="passw" minlength="3" maxlength="20" required> </label><br><br>
+
+
+<!-- Cоздаем кнопки сброса и отправки данных -->
+<input type="reset" value="сброс">&nbsp;&nbsp;
+<input type="submit" value="отпавить" disabled>
 
 </form>
 
