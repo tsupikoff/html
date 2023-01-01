@@ -1,238 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
 <body>
+<form action="php/regostration/php" method="post" name="reg_form">
+
+<!-- Создаем поле для ввода имени -->
+<label>Имя:<input type="text" name="first_name"> </label><br><br>
 
 
-  <style>
-     
-    /* Внутренняя таблица стилей */
- 
-    .caption_h_1{                         
-    margin-top: 1.5em;
-    margin-bottom: 1.1em;
-    font-family: Arial;
-    text-align: center;
-    font-size: 14px !important;
-    color: #173147;
-    }
- 
-    .caption_h_2{                       
-    margin-top: 1.5em;
-    margin-bottom: 1.1em;
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    font-size: 13px;
-    font-family: Arial, sans-serif;
-    color: #173147;
-    }
- 
-    .paragraph{                         
-    margin-top: 7px;
-    margin-bottom: 5px;
-    line-height: 1.5; 
-    text-indent: 5px; 
-    }
- 
-    .definition_paragraph{                    
-    margin-top: 15px;
-    margin-bottom:15px;
-    padding-left: 5px;
-    border: 0px;
-    border-left: 5px;
-    border-color: #CCCCFF;
-    border-style: solid;
-    line-height: 1.5; 
-    text-indent: 5px; 
-    }
- 
-    .note_paragraph{                      
-    margin-top: 15px;
-    margin-bottom:15px;
-    padding-left: 5px;
-    border: 0px;
-    border-left: 5px;
-    border-style: solid;
-    border-color: #FFAAAA;
-    line-height: 1.5; 
-    text-indent: 5px; 
-    }
-         
-    .definition_word{                     
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.95em;
-    color: #008800;
-    }
- 
-    .list_1{                      
-    margin-top: 0px;
-    padding-left: 20px;
-    list-style-image: url(circle_green.png);
-    list-style-position: inside;
-    line-height: 1.8;
-    }
- 
-    .list_1 a{                
-    text-decoration: none;
-    border-bottom: 0px;
-    color: #1611A3;
-    }
- 
-    .content_div{                 
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    padding: 20px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #dddddd;
-    box-shadow: 4px 3px 8px 3px #cccccc;
-    }
- 
-    .green_letter{
-    color: #008800;
-    }
- 
-    .light_blue_letter{                     
-    color: #5555CC;
-    }
- 
-    .orange_letter{
-    color: #FE8C00;
-    }
-     
-  </style>
- 
-</head>
-<body>
-  
-<h1 class="caption_h_1">Создание гиперссылок в HTML. Тег &lt;a&gt;</h1>
-   
-<div class="content_div">     
-   
-  <ul class="list_1">
-             
-    <li><a href="#point_1">Определение гиперссылки в HTML</a></li>
-     
-    <li><a href="#point_2">Атрибут href гиперссылки</a></li>
-     
-    <li><a href="#point_3">Атрибут target гиперссылки</a></li>    
-     
-    <li><a href="#point_4">Атрибут download гиперссылки</a></li>    
-   
-  </ul>
-   
-</div>
- 
-     
-<h2 class="caption_h_2" id="point_1">Определение гиперссылки в HTML</h2>
- 
-<div class="content_div">
-   
-<p class="paragraph"> 
-  Для создания гиперссылок в <span class="green_letter">HTML</span> 
-  используется элемент <span class="green_letter">«a»</span>, который 
-  формируется парным тегом 
-  <span class="green_letter">&lt;a&gt;</span> 
-  (от <span class="orange_letter">англ.</span> 
-  <span class="light_blue_letter">anchor</span> &ndash; якорь). Все, 
-  что находится внутри элемента <span class="green_letter">«a»</span> 
-  является гиперссылкой.  
-</p>
-     
-<p class="definition_paragraph">
-  <dfn class="definition_word">Гиперссылка</dfn> 
-  (от <span class="orange_letter">англ.</span> 
-  <span class="light_blue_letter">hyperlink</span> &ndash; гиперссылка) 
-  &ndash; это часть гипертекстового документа, которая ссылается на 
-  другие элементы в самом документе (текст, изображение и т.д.) или 
-  другие объекты вне данного документа (другой документ, видеофайл и т.д.). 
-</p>
- 
-</div>
- 
- 
-<h2 class="caption_h_2" id="point_2">Атрибут href гиперссылки</h2>
- 
-<div class="content_div">
- 
-<p class="paragraph">
-  Чтобы указать адрес объекта, на который будет совершен переход по ссылке, 
-  используется атрибут <span class="green_letter">href</span>. В качестве 
-  значения он принимает абсолютный или относительный адрес документа. 
-  Примером абсолютного адреса может служить 
-  <span class="green_letter">http://www.yandex.ru</span>. Абсолютные адреса 
-  действительны в любом месте, независимо от сайта, на котором расположена 
-  ссылка. А вот относительные адреса формируются относительно текущей папки 
-  документа, в котором прописана данная ссылка, или корня сайта.  
-</p>
- 
-<p class="note_paragraph">  
-  Напомним, что в случае использования сборки 
-  <span class="green_letter">Xampp</span> для размещения создаваемых в ходе 
-  изучения веб-страниц на локальном сервере, их нужно помещать в папку 
-  <span class="green_letter">/xampp/htdocs</span>. А еще лучше создать в  
-  <span class="green_letter">htdocs</span> отдельную рабочую папку, например, 
-  <span class="green_letter">test</span>, и уже в ней сохранять тестируемые 
-  страницы. Тогда абсолютный адрес, например, для страницы 
-  <span class="green_letter">page_1.html</span> будет иметь вид 
-  <span class="green_letter">http://localhost/test/page_1.html</span>. 
-  Указывать нужно именно <span class="green_letter">http://localhost/...</span>, 
-  а не фактическое расположение файла на компьютере, иначе могут возникнуть 
-  проблемы с отображением страницы. 
-</p>
- 
-</div>
- 
- 
-<h2 class="caption_h_2" id="point_3">Атрибут target гиперссылки</h2>
- 
-<div class="content_div">
- 
-<p class="paragraph">
-  По умолчанию, при переходе по ссылке браузер открывает документ в текущем 
-  окне или фрейме. Чтобы изменить такое поведение браузера, используется 
-  атрибут <span class="green_letter">target</span>, который в качестве значения 
-  принимает одно из зарезервированных значений 
-  <span class="green_letter">"_self | _blank | _parent | _top"</span> или имя 
-  целевого окна или фрейма, которое устанавливается их атрибутом 
-  <span class="green_letter">name</span>. Если указать несуществующее имя окна 
-  или фрейма, то браузер откроет документ в новом окне. Значение 
-  <span class="green_letter">"_self"</span> установлено по умолчанию. Если 
-  использовать значение <span class="green_letter">"_blank"</span>, то браузер 
-  откроет документ в новом окне или фрейме; если 
-  <span class="green_letter">"_parent"</span> &ndash; в родительском фрейме, а 
-  в случае отсутствия такового, в текущем окне; если 
-  <span class="green_letter">"_top"</span> &ndash; в главном (текущем) окне, в 
-  котором находится данный фрейм, содержащий ссылку, а в случае отсутствия 
-  фреймов в окне, данное значение сработает, как 
-  <span class="green_letter">"_self"</span>.
-</p>
- 
-</div>
- 
- 
-<h2 class="caption_h_2" id="point_4">Атрибут download гиперссылки</h2>
- 
-<div class="content_div">
- 
-<p class="paragraph">
-  В <span class="green_letter">HTML 5</span> был введен еще один полезный 
-  атрибут <span class="green_letter">download</span>, который не принимает 
-  значений, а служит индикатором того, что браузер не совершит переход по 
-  ссылке, а предложит закачать файл, указанный в атрибуте 
-  <span class="green_letter">href</span> в качестве значения. 
-</p>
- 
-</div>
+<!-- Все элементы одной группы радиокнопок должны иметь одинаковое имя -->
+Возраст:<label> 20:30 <input type="radio"  name="age" value="2030"></label>
+<label>31:40 <input type="radio"  name="age" value="3140">  </label>
+<label>41:50 <input type="radio"  name="age" value="4150">  </label><br><br>  
+
+
+<!-- Выбираем виды которыми владеем -->
+Виды единоборства:<label>бокс: <input type="checkbox" name="box" value="box">   </label>
+<label>карате:<input type="checkbox" name="karate" value="karate">   </label>
+<label>дзюдо: <input type="checkbox" name="judo" value="judo">   </label><br><br>
+
+<!-- Поле для загрузки файла(фото) -->
+<label>Загрузить фото <input type="file" name="foto"> </label><br><br>  
+<!-- Поле ввода пороля -->
+<label>Ввидите пароль: <input type="password" name="passw"> </label><br><br>
+<!-- Создаем кнопи сброса и отправки данных на сервер -->
+<input type="reset" value="Сброс">
+<input type="submit" value="Отправить" disabled>
+
+</form>
+
 </body>
 
 
