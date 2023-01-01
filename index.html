@@ -5,37 +5,109 @@
     <title>Document</title>
   </head>
 <body>
-<form action="php/regostration.php" method="post" name="reg_form">
+<h1>Html Forms</h1>
+  
+  <form action="" method="get">
+<label>login: <input type="text" name="login" placeholder="login"></label><br><br>
 
-<label> Имя: <input type="text" name="first_name" minlength="2" maxlength="20" autofocus ></label><br><br>
+<label>Password: <input type="password" name="password" placeholder="password"></label>
 
-
-<label>Фамилия: <input type="text" name="last_name" minlength="3" maxlength="30"> </label><br><br>
-
-<!-- Все элементы радио группы должны иметь одно имя -->
-Возраст:<label>20:30 <input type="radio" name="age" value="2030"> </label>
-<label>31:40<input type="radio" name="age" value="3140"> </label>
-<label>41:50 <input type="radio" name="age" value="4150"> </label><br><br>
-
-<!-- Выбираем виды которыми владеем -->
-Виды единоборств:<label>бокс:<input type="checkbox" name="box" value="box"> </label>
-<label>карате:<input type="checkbox" name="karate" value="karate"> </label>
-<label>дзюдо:<input type="checkbox" name="judo" value="judo" checked:> </label><br><br>
-
-<!-- Поле для загрузки нескольких файлов сразу( ФОТО) -->
-
-<label>Загрузить фото: <input type="file" name="foto" multiple> </label><br><br>
-
-<label>Поле для ввода логина: <input type="text" name="login" required> </label><br><br>
-
-<label>Поле для ввода пароля: <input type="password" name="passw" minlength="3" maxlength="20" required> </label><br><br>
+<button type="submit">Sempt</button><br>
 
 
-<!-- Cоздаем кнопки сброса и отправки данных -->
-<input type="reset" value="сброс">&nbsp;&nbsp;
-<input type="submit" value="отпавить" disabled>
 
 </form>
+
+
+<h2>File Form </h2>
+<form action="" method="post">
+<label>avatar: <input type="file" name="avatar"></label>
+<button type="submit">Send</button>
+
+
+</form>
+<h3>Color Forms</h3>
+<form action="" method="post">
+<input type="color" name="color">
+<label for="color">Color</label><br><br>
+
+</form>
+<form action="" method="post">
+<label>Age:<input type="number" name="Age"  min="18" max="30" value="18" step="5"></label>
+
+</form>
+<h3>Selekted Form</h3>
+
+<form action="" >
+<label for="phone"Choose your phone></label>
+<select name="phone" id="phone">
+  <option value="" >--Your Phone--</option>
+<option value="apple" >Apple</option>
+<option value="Samsung" >Samsung</option>
+<option value="Nokia" >Nokia</option>
+
+</select>
+</form>
+
+<h3>Checkbox</h3>
+<form action="">
+<input type="checkbox" name="checkbox_1">
+<label for="checkbox_1">Yes</label>
+
+<input type="checkbox" name="checkbox_2">
+<label for="checkbox_2">Yes</label>
+
+<input type="checkbox" name="checkbox_3">
+<label for="checkbox_3">Yes</label>
+
+</form>
+<h3>Radio Form</h3>
+<form action="">
+
+  <input type="radio" name="radio" checked>
+  <label for="radio">Yes</label>
+  <input type="radio" name="radio">
+  <label for="radio">No</label>
+</form>
+<h3>Slider Form</h3>
+<form action="">
+<input type="range" name="volume" id="volume">
+<output class="volume-output"></output>
+
+</form>
+
+
+<form action="">
+
+  <label for="name">Your name</label>
+  <input type="text" name="name" placeholder=""your name bith><br><br>
+
+
+  <label for="textarea">Text</label>
+<textarea name="textarea" cols="50" rows="10" 
+placeholder="type text...."></textarea></textarea><br><br>
+
+<button type="submit" name="Send"> Send</button>
+
+
+
+</form>
+
+
+<script>
+const volume = document.querySelector('#volume');
+const output = document.querySelector('.volume-output');
+
+output.textContent = volume.value;
+
+volume.addEventListener('input', () => {
+output.textContent = volume.value;
+});
+
+</script>
+
+
+
 
 </body>
 
