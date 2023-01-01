@@ -1,118 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
 <body>
-<h1>Html Forms</h1>
-  
-  <form action="" method="get">
-<label>login: <input type="text" name="login" placeholder="login"></label><br><br>
+  <form action="php/registration.php" method="post" name="reg-form">
 
-<label>Password: <input type="password" name="password" placeholder="password"></label>
-
-<button type="submit">Sempt</button><br>
-
-
-
-</form>
-
-
-<h2>File Form </h2>
-<form action="" method="post">
-<label>avatar: <input type="file" name="avatar"></label>
-<button type="submit">Send</button>
+Укажите спортивный разряд:
+<!-- Создаем раскрывающийся список -->
+<select name="category">
+<option value="0" >отсутствует</option>
+<option value="3" label="3">3-й</option>
+<option value="2" label="2">2-й</option>
+<option value="1" label="1">1-й</option>
+<option value="kms">kms</option>
+<option value="ms">ms</option>
+<option value="msmk">msmk</option>
+</select><br><br>
 
 
-</form>
-<h3>Color Forms</h3>
-<form action="" method="post">
-<input type="color" name="color">
-<label for="color">Color</label><br><br>
-
-</form>
-<form action="" method="post">
-<label>Age:<input type="number" name="Age"  min="18" max="30" value="18" step="5"></label>
-
-</form>
-<h3>Selekted Form</h3>
-
-<form action="" >
-<label for="phone"Choose your phone></label>
-<select name="phone" id="phone">
-  <option value="" >--Your Phone--</option>
-<option value="apple" >Apple</option>
-<option value="Samsung" >Samsung</option>
-<option value="Nokia" >Nokia</option>
-
-</select>
-</form>
-
-<h3>Checkbox</h3>
-<form action="">
-<input type="checkbox" name="checkbox_1">
-<label for="checkbox_1">Yes</label>
-
-<input type="checkbox" name="checkbox_2">
-<label for="checkbox_2">Yes</label>
-
-<input type="checkbox" name="checkbox_3">
-<label for="checkbox_3">Yes</label>
-
-</form>
-<h3>Radio Form</h3>
-<form action="">
-
-  <input type="radio" name="radio" checked>
-  <label for="radio">Yes</label>
-  <input type="radio" name="radio">
-  <label for="radio">No</label>
-</form>
-<h3>Slider Form</h3>
-<form action="">
-<input type="range" name="volume" id="volume">
-<output class="volume-output"></output>
-
-</form>
-
-
-<form action="">
-
-  <label for="name">Your name</label>
-  <input type="text" name="name" placeholder=""your name bith><br><br>
-
-
-  <label for="textarea">Text</label>
-<textarea name="textarea" cols="50" rows="10" 
-placeholder="type text...."></textarea></textarea><br><br>
-
-<button type="submit" name="Send"> Send</button>
+Выберите виды спорта:<br><br>
+<!-- Изначально будет видно три пункута но выбирать 
+сразу несколько пунктов при нажатой клавише Ctrl -->
+<select name="sport[]" size="3" multiple>
+<option value="0" selected>box</option>
+<option value="1">judo</option>
+<option value="2">karate</option>
+<option value="3">taikvondo</option>
+<option value="4">futboll</option>
+</select><br><br>
+<button type="submit" name="play">Отправить</button>
+  </form>
 
 
 
-</form>
 
 
-<script>
-const volume = document.querySelector('#volume');
-const output = document.querySelector('.volume-output');
 
-output.textContent = volume.value;
 
-volume.addEventListener('input', () => {
-output.textContent = volume.value;
-});
+  </form>
 
-</script>
 
 
 
 
 </body>
-
-
-
-</head>
-
 </html>
