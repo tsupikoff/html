@@ -1,136 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="mystyle.css">
- <meta charset="utf-8">
- <title>Tsupikov Cv</title>
-
+ <link rel="stylesheet" href="mystyle.css">
+ <link  rel="stylesheet" href="media.css">
+ <meta charset="utf-8"> 
+ <title>freelancer portfolio</title>
 </head>
+
+ 
 <body>
- <div class="container">
-<div class="info">
 
-    <img src="me.JPG" alt="me" 
-    class="me"/>
-
-<div class="info-text">
-    <h1>Александр Цупиков</h1>
-    <p>Я собираюсь стать топовым программистом<strong> Js</strong></p>
-    <p>Я люблю учиться и трахать телочек, отжимаюсь как мужчина)</p>
-
-    <h4>Мои социальные сети</h4>
-    
-      <a href=" https://instagram.com/alex_zaebal111"
-       target="_blank">instagram</a>
-       |
-      <a href=" https://t.me/aleksandr232356" 
-      target="_blank">Telegram</a>
-    
-</div> 
-  </div> 
-
-
-
-
-<div class="card bg-yellow">
-<h2>Мои хобби</h2>
-<ol class="list">
-  <li>Филантроп</li>
-  <li>Гоняю с цыганами за орехами</li>
-  <li>Люблю Тыркулову Юлю</li>
-  <li>Cпорт</li>
-</ol>
-</div>
-
-
-<div class="card bg-green">
-<h2>Опыт работы</h2>
-<table class="table">
-  
-<tr>
-<td>Угли-Угли</td>
-<td>Кондитер</td>
-<td>2019-2021</td>
-
-<tr>
-  <td>кафе Цыган</td>
-  <td>башнур</td>
-  <td>2019-2021</td>
-  
-</tr>
-<tr>
-  <td>Ресторан ГА</td>
-  <td>Членосос</td>
-  <td>2018-2019</td>
-  
-  </tr>
-  <tr>
-    <td>Беллини</td>
-    <td>Дрочильник</td>
-    <td>2018-2019</td>
-    
-    </tr>
-</table>
-</div>
-
-<div class="card bg-red">
-<h2>Видео где я жахаю телочек</h2>
-
-  <ul class="link-list">
-  <li>
-   <a href="https://www.youtube.com/watch?v=7cSHcUP-8Os"
-    target="_blank">жахаю</a>   
-  </li>
-  <li>
-  <a href="https://www.youtube.com/watch?v=TMLZWOVVcxY" 
-  target="_blank">Мои Член</a>  
-  </li>
-    </ul>  
-  
-
-</div>
-
-<div class="contact">
-<h2>Cвязаться со мной</h2>
-
-<form action="/">
-<div class="row">
-  <div class="form-group">
-  <label for="name" >Ваше имя: </label>
-  <input type="text" id="name" 
-  placeholder="введите имя....">
-
+<header class="header">
+  <div class="container">
+    <!-- header nav -->
+    <div class="header-nav">
+        <a class="logo" href="#!">Kelvin</a>
+         <nav class="nav">
+          <ul class="nav-list">
+             <li class="nav-item"><a href="#!" class="nav-link activ">Home</a></li>
+              <li class="nav-item"><a href="#!" class="nav-link">Works</a></li>
+              <li class="nav-item"><a href="#!" class="nav-link">Services</a></li>
+              <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="#!" class="nav-link">Contact</a></li>
+          </ul>
+         </nav>
+      </div>
+<!--header content  -->
+<div class="header-row">
+  <div class="header-content">
+    <h1 class="header-heading"> Kelvin Kramer<br> Designer & Developer</h1>
+    <p> I’m a portrait, fashion and lifestyle photographer living In New York City. During my 
+      thirteen year tenure here.</p>
   </div>
-
-  <div class="form-group">
-  <label for="Email" >Ваш email: </label>
-  <input type="email" id="Email" 
-  placeholder="введите email....">
+  <div class="header-img">
+    <img src="images/header/hero.png" alt="" >
   </div>
 </div>
+   </div>
+  </header>
+  <section class="services">
+    <div class="container">
+     <div class="services-row">
+      
 
-  
-  <div class="form-group">
-  <label for="text" >Ваше сообщение: </label>
+      <div class="service-card">
+        <img class="service-card-img" src="images/services/01.svg.svg" alt=" UI/UX Design">
+        <h3 class="service-card-title"> UI/UX Design</h3>
+        <p>Our design is translated into comprehensive digital environments built on latest development 
+          standards.</p>
+        
+      </div>
 
-  <textarea  id="text" cols="15" 
-  rows=""></textarea>
+
+      <div class="service-card">
+        <img class="service-card-img" src="images/services/02.svg.svg" alt=" UI/UX Design">
+        <h3 class="service-card-title"> Development</h3>
+        <p>Our design is translated into comprehensive digital environments built on latest development 
+          standards.</p>
+        
+      </div>
+
+      <div class="service-card">
+        <img class="service-card-img" src="images/services/03.svg.svg" alt=" UI/UX Design">
+        <h3 class="service-card-title">software testing</h3>
+        <p>Our design is translated into comprehensive digital environments built on latest development 
+          standards.</p>
+        
+      </div>
+
+
+     </div> 
+    </div>
+  </section>
+
+
+
+<section class="portfolio">
+  <div class="container">
+    <div class="portfolio-titel">
+      <h2 class="titel-1">Portfolio</h2>
+    </div>
+
+
+
+    <div class="project">
+      <img src="images/portfolio/01.jpg.jpg" alt="Online fashion store - Homepage" class="project-img">
+       <h3 class="project-titel"><a href="#!">Online fashion store - Homepage</a></h3>
+    </div>
+
+    <div class="project">
+      <img src="images/portfolio/02.jpg.jpg" alt="Reebok Store - Concept" class="project-img">
+       <h3 class="project-titel"><a href="#!">Reebok Store - Concept</a></h3>
+    </div>
+
+    <div class="project">
+      <img src="images/portfolio/03.jpg.jpg" alt="Braun Landing Page - Concept" class="project-img">
+       <h3 class="project-titel"><a href="#!">Braun Landing Page - Concept</a></h3>
+    </div>
+
+
   </div>
+</section>
 
 
-<input class="btn" type="submit" value="Связаться!">
-</div>
-</form>
+<footer class="contacts">
+  <div class="container">
+    <div class="contacts-titel">
+      <h2 class="titel-1">Contacts</h2>
+    </div>
+    <div class="contacts-content">
+      <p>Want to know more or just chat?<br> You are welcome!</p>
+    </div>
+    <div class="contacts-button">
+     <a href="#!" class="btn">Send massage</a> 
+    </div>
+    <div class="contacts-social">
+      <a href="#!"><img src="images/socials/LinkedIn.svg" alt="LinkedIn"></a>
+      <a href="#!"><img src="images/socials/Instargam.svg" alt="Instargam"></a>
+      <a href="#!"><img src="images/socials/Behance.svg" alt="Behance"></a>
+      <a href="#!"><img src="images/socials/Dribble.svg" alt="Dribble"></a>
+    </div>
+    <div class="contacts-footer">
+      <p>Like me on <br>LinkedIn, Instagram, Behance, Dribble</p>
+    </div>
+  </div>
+</footer>
 
-<div class="position">
- <div class="box"></div>
-</div>
 
-<div  style="margin-bottom:500px"></div>
 
- </div>
 
-</body>
+
+
+
+
+
+<script src="./js/main.js"></script>
+</body> 
 </html>
 
 
