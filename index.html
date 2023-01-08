@@ -3,127 +3,61 @@
 <head>
  <link rel="stylesheet" href="mystyle.css">
  <link  rel="stylesheet" href="media.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,400&family=Yeon+Sung&display=swap" rel="stylesheet">
  <meta charset="utf-8"> 
- <title>freelancer portfolio</title>
+ <title>Document</title>
 </head>
 
  
 <body>
 
-<header class="header">
+<header>
   <div class="container">
-    <!-- header nav -->
-    <div class="header-nav">
-        <a class="logo" href="#!">Kelvin</a>
-         <nav class="nav">
-          <ul class="nav-list">
-             <li class="nav-item"><a href="#!" class="nav-link activ">Home</a></li>
-              <li class="nav-item"><a href="#!" class="nav-link">Works</a></li>
-              <li class="nav-item"><a href="#!" class="nav-link">Services</a></li>
-              <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
-               <li class="nav-item"><a href="#!" class="nav-link">Contact</a></li>
-          </ul>
-         </nav>
-      </div>
-<!--header content  -->
-<div class="header-row">
-  <div class="header-content">
-    <h1 class="header-heading"> Kelvin Kramer<br> Designer & Developer</h1>
-    <p> I’m a portrait, fashion and lifestyle photographer living In New York City. During my 
-      thirteen year tenure here.</p>
+    <div class="header-wrapper">
+      <a href="#!">
+        <img src="images/logo.svg.svg" alt="logo">
+      </a>
+      <button class="btn">login</button>
+    </div>
+    </div>
+  
+  
+</header>
+
+<section>
+  <div class="container">
+  <h1>html+css. верстка</h1>
+  <div class="card-wrapper">
+    <div class="card">
+      <h3>теория html + css.<br>Структура приложения</h3>
+      <img class="card-img" src="images/img-1.svg" alt="">
+      <p>Проговорим о том, что такое <span>HTML и CSS.</span> Создадим проект и рассмотрим его файловую структуру. Научимся работать с макетом в Figma. Изучим 13 самых используемых тегов. Напишем HTML-структуру нашего приложения.</p>
+    </div>
+    <div class="card">
+      <h3>Стилизация<br> HTML-элементов</h3>
+      <img class="card-img" src="images/img-2.svg" alt="">
+      <p>Подключим шрифты. Рассмотрим самый правильный способ добавления стилей. Рассмотрим синтаксис написания стилей. Напишем стили для элементов. Изучим популярные <span>свойства css.</span> Посмотрим как располагать элементы, используя Flexbox.</p>
+    </div>
+    <div class="card">
+      <h3>Адаптив.<br>Медиазапросы</h3>
+      <img class="card-img" src="images/img-3.svg" alt="">
+      <p>Сделаем наше приложение адаптивным, чтобы оно так же хорошо выглядело на планшетах и мобильных телефонах. Рассмотрим как работает св-во flex-wrap. Научимся делать адаптив, используя медиазапросы.</p>
   </div>
-  <div class="header-img">
-    <img src="images/header/hero.png" alt="" >
   </div>
 </div>
-   </div>
-  </header>
-  <section class="services">
-    <div class="container">
-     <div class="services-row">
-      
-
-      <div class="service-card">
-        <img class="service-card-img" src="images/services/01.svg.svg" alt=" UI/UX Design">
-        <h3 class="service-card-title"> UI/UX Design</h3>
-        <p>Our design is translated into comprehensive digital environments built on latest development 
-          standards.</p>
-        
-      </div>
-
-
-      <div class="service-card">
-        <img class="service-card-img" src="images/services/02.svg.svg" alt=" UI/UX Design">
-        <h3 class="service-card-title"> Development</h3>
-        <p>Our design is translated into comprehensive digital environments built on latest development 
-          standards.</p>
-        
-      </div>
-
-      <div class="service-card">
-        <img class="service-card-img" src="images/services/03.svg.svg" alt=" UI/UX Design">
-        <h3 class="service-card-title">software testing</h3>
-        <p>Our design is translated into comprehensive digital environments built on latest development 
-          standards.</p>
-        
-      </div>
-
-
-     </div> 
-    </div>
-  </section>
-
-
-
-<section class="portfolio">
-  <div class="container">
-    <div class="portfolio-titel">
-      <h2 class="titel-1">Portfolio</h2>
-    </div>
-
-
-
-    <div class="project">
-      <img src="images/portfolio/01.jpg.jpg" alt="Online fashion store - Homepage" class="project-img">
-       <h3 class="project-titel"><a href="#!">Online fashion store - Homepage</a></h3>
-    </div>
-
-    <div class="project">
-      <img src="images/portfolio/02.jpg.jpg" alt="Reebok Store - Concept" class="project-img">
-       <h3 class="project-titel"><a href="#!">Reebok Store - Concept</a></h3>
-    </div>
-
-    <div class="project">
-      <img src="images/portfolio/03.jpg.jpg" alt="Braun Landing Page - Concept" class="project-img">
-       <h3 class="project-titel"><a href="#!">Braun Landing Page - Concept</a></h3>
-    </div>
-
-
-  </div>
 </section>
 
-
-<footer class="contacts">
+<footer>
   <div class="container">
-    <div class="contacts-titel">
-      <h2 class="titel-1">Contacts</h2>
-    </div>
-    <div class="contacts-content">
-      <p>Want to know more or just chat?<br> You are welcome!</p>
-    </div>
-    <div class="contacts-button">
-     <a href="#!" class="btn">Send massage</a> 
-    </div>
-    <div class="contacts-social">
-      <a href="#!"><img src="images/socials/LinkedIn.svg" alt="LinkedIn"></a>
-      <a href="#!"><img src="images/socials/Instargam.svg" alt="Instargam"></a>
-      <a href="#!"><img src="images/socials/Behance.svg" alt="Behance"></a>
-      <a href="#!"><img src="images/socials/Dribble.svg" alt="Dribble"></a>
-    </div>
-    <div class="contacts-footer">
-      <p>Like me on <br>LinkedIn, Instagram, Behance, Dribble</p>
-    </div>
-  </div>
+ <ul>
+  <li><a href="#!"><img src="images/icons/Vector.png" alt="Home">Home</a></li>
+  <li><a href="#!"><img src="images/icons/Vector (1).png" alt="All Courses ">All Courses</a></li>
+  <li><a href="#!"><img src="images/icons/Vector (2).png" alt="Sandbox ">Sandbox</a> </li>
+  <li><a href="#!"><img src="images/icons/Vector (3).png" alt="Contacts">Contacts</a></li>
+</div>
+ </ul>
 </footer>
 
 
@@ -134,7 +68,27 @@
 
 
 
-<script src="./js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body> 
 </html>
 
