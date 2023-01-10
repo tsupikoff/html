@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
  <link rel="stylesheet" href="mystyle.css">
- <link  rel="stylesheet" href="media.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,400&family=Yeon+Sung&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,400&family=Yeon+Sung&display=swap" rel="stylesheet">
  <meta charset="utf-8"> 
  <title>Document</title>
 </head>
@@ -13,99 +10,107 @@
  
 <body>
 
-<header>
-  <div class="container">
-    <div class="header-wrapper">
-      <a href="#!">
-        <img src="images/logo.svg.svg" alt="logo">
-      </a>
-      <button class="btn">login</button>
-    </div>
-    </div>
-  
-  
-</header>
-
-<section>
-  <div class="container">
-  <h1>html+css. верстка</h1>
-  <div class="card-wrapper">
-    <div class="card">
-      <h3>теория html + css.<br>Структура приложения</h3>
-      <img class="card-img" src="images/img-1.svg" alt="">
-      <p>Проговорим о том, что такое <span>HTML и CSS.</span> Создадим проект и рассмотрим его файловую структуру. Научимся работать с макетом в Figma. Изучим 13 самых используемых тегов. Напишем HTML-структуру нашего приложения.</p>
-    </div>
-    <div class="card">
-      <h3>Стилизация<br> HTML-элементов</h3>
-      <img class="card-img" src="images/img-2.svg" alt="">
-      <p>Подключим шрифты. Рассмотрим самый правильный способ добавления стилей. Рассмотрим синтаксис написания стилей. Напишем стили для элементов. Изучим популярные <span>свойства css.</span> Посмотрим как располагать элементы, используя Flexbox.</p>
-    </div>
-    <div class="card">
-      <h3>Адаптив.<br>Медиазапросы</h3>
-      <img class="card-img" src="images/img-3.svg" alt="">
-      <p>Сделаем наше приложение адаптивным, чтобы оно так же хорошо выглядело на планшетах и мобильных телефонах. Рассмотрим как работает св-во flex-wrap. Научимся делать адаптив, используя медиазапросы.</p>
+<div class="header">
+  <h1 class="header-titel">Юрий Ключевский</h1>
+  <p class="header-sub"> фрилансер, веб-разработчик, создание   сайтов</p>
+  <div class="header-arrow">
+    <img class="card-logo" src="images/icons/svg.svg" alt="logo">
   </div>
+ 
+</div>
+
+
+<div class="portfolio">
+  <div class="container">
+    <h2 class="section-header">Портфолио</h2>
+    <!-- порттофлио враппер -->
+
+    <div class="portfolio-cards-wrapper">
+      
+    <!-- //портфолио враппер -->
+    <!-- card -->
+    <div class="card">
+      <img class="card-img" src="./images/Group1.jpg.jpg" alt="сайт">
+      <h3 class="card-title" >Многостраничный сайт</h3>
+      <p>Верстка многостраничного сайта.</p>
+    </div>
+   
+    <!-- card// -->
+    <div class="card">
+      <img class="card-img" src="./images/Group2.jpg.jpg" alt="сайт">
+      <h3 class="card-title" >Адаптивный лендинг</h3>
+      <p>Верстка многостраничного сайта.</p>
+    </div>
+    <!-- card -->
+    <div class="card">
+      <img class="card-img" src="./images/Group3.jpg.jpg" alt="сайт">
+      <h3 class="card-title" >Личный сайт </h3>
+      <p>Верстка многостраничного сайта.</p>
+    </div>
+    <div class="card">
+      <img class="card-img" src="./images/Group4.jpg.jpg" alt="сайт">
+      <h3 class="card-title" >Интернет магазин</h3>
+      <p>Верстка многостраничного сайта.</p>
+    </div>
+
+  
+
   </div>
 </div>
-</section>
 
-<footer>
+    </div>
+
+
+
+<div class="footer">
   <div class="container">
- <ul>
-  <li><a href="#!"><img src="images/icons/Vector.png" alt="Home">Home</a></li>
-  <li><a href="#!"><img src="images/icons/Vector (1).png" alt="All Courses ">All Courses</a></li>
-  <li><a href="#!"><img src="images/icons/Vector (2).png" alt="Sandbox ">Sandbox</a> </li>
-  <li><a href="#!"><img src="images/icons/Vector (3).png" alt="Contacts">Contacts</a></li>
+    <div class="footer-row">
+         <!-- footer copyright -->
+      <div class="footer-copyright footer-col">
+        <div class="footer-copyright-name">© Юрий Ключевский</div>
+        <p>HTML верстка и разработка сайтов</p>
+         </div>
+         <!-- footer copyright end -->
+
+
+<!-- footer icons start -->
+        <div class="footer-icons footer-col">
+          <p>Мои профили в социальных сетях:</p>
+          <div class="footer-link">
+            <a href="#">
+               <img src="/train2/images1/instagram 1.svg" alt="instagram">
+            </a>
+            
+            <a href="#">
+              <img src="/train2/images1/2.svg.svg" alt="instagram">
+             
+              <a href="#">
+                <img src="/train2/images1/3.svg.svg" alt="instagram">
+              
+                <a href="#">
+                  <img src="/train2/images1/vk-brands 1.svg" alt="instagram">
+                 
+                  <a href="#">
+                    <img src="/train2/images1/github-brands.svg" alt="instagram">
+              
+          </div>
+
+
+        </div>
+<!-- foter icons end -->
+
+          <div class="footer-contacts footer-col">
+            <a href="#" class="footer-btn">
+              Связаться Вконтакте
+            </a>
+           
+            <p>Напишите мне, чтобы заказать или узнать стоимость верстки вашего проекта.</p>
+          </div>
+
+
+    </div>
+  </div>
 </div>
- </ul>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body> 
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -114,7 +119,5 @@
 
 
 </body>
-
-
 
 </html>
